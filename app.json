@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "WeCe",
+    "slug": "wece",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#3E9E9E"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "de.wece.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#3E9E9E"
+      },
+      "package": "de.wece.app",
+      "config": {
+        "googleMaps": {
+          "apiKey": "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "plugins": [
+      "expo-font",
+      "expo-location",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "WeCe needs camera access to scan partner QR codes."
+        }
+      ],
+      [
+        "expo-barcode-scanner",
+        {
+          "cameraPermission": "WeCe needs camera access to scan partner QR codes."
+        }
+      ]
+    ]
+  }
+}
